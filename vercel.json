@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "backend/main.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "includeFiles": "**/*.csv|**/*.geojson"
+      }
     },
     {
       "src": "frontend/package.json",
@@ -22,10 +25,5 @@
       "src": "/(.*)",
       "dest": "frontend/dist/$1"
     }
-  ],
-  "functions": {
-    "backend/main.py": {
-      "includeFiles": "*.csv|*.geojson"
-    }
-  }
+  ]
 }
