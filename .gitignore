@@ -1,0 +1,109 @@
+# ===============================
+# AI Crime Analytics Platform
+# .gitignore
+# ===============================
+
+# --------------------------------
+# ENV FILES
+# --------------------------------
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# --------------------------------
+# NODE / FRONTEND
+# --------------------------------
+node_modules/
+.next/
+out/
+dist/
+build/
+.vercel/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --------------------------------
+# PYTHON / BACKEND
+# --------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.sqlite3
+*.db
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Tool Caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# --------------------------------
+# FASTAPI / UVICORN
+# --------------------------------
+*.log
+logs/
+uvicorn.log
+
+# --------------------------------
+# ML MODELS / GENERATED FILES
+# --------------------------------
+backend/ml/saved_models/
+backend/ml/reports/
+*.pkl
+*.joblib
+*.h5
+*.onnx
+*.csv.tmp
+
+# Keep static source dataset if desired:
+# Uncomment next line if you want to hide dataset too
+# Database/*.csv
+
+# --------------------------------
+# IDE / EDITOR
+# --------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --------------------------------
+# TEMP FILES
+# --------------------------------
+tmp/
+temp/
+*.tmp
+
+# --------------------------------
+# OS FILES
+# --------------------------------
+Desktop.ini
+
+# --------------------------------
+# TEST OUTPUTS
+# --------------------------------
+coverage/
+junit.xml
+
+# --------------------------------
+# OPTIONAL DEPLOYMENT FILES
+# --------------------------------
+*.pem
+*.key
